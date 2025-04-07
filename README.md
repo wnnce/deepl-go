@@ -25,20 +25,20 @@ Create deepl client
 package main
 
 import (
-	"encoding/json"
-	"github.com/wnnce/deepl-go"
-	"log"
+    "encoding/json"
+    "github.com/wnnce/deepl-go"
+    "log"
 )
 
 func main() {
-	client, err := deepl.NewDeepl(deepl.Config{
-		AuthKey:    "<Token>",
-		JSONEncode: json.Marshal,
-		JSONDecode: json.Unmarshal,
-	})
-	if err != nil {
-		log.Fatalln(err)
-	}
+    client, err := deepl.NewDeepl(deepl.Config{
+        AuthKey:    "<Token>",
+        JSONEncode: json.Marshal,
+        JSONDecode: json.Unmarshal,
+    })
+    if err != nil {
+        log.Fatalln(err)
+    }
 }
 ```
 
